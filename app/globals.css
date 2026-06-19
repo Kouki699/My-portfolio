@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(246, 248, 251, 0.78) 0%, #ffffff 34rem),
+    #ffffff;
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(29, 78, 216, 0.16);
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-block {
+    @apply py-14 sm:py-16 lg:py-20;
+  }
+
+  .section-label {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-accent;
+  }
+
+  .section-title {
+    @apply mt-3 text-2xl font-black tracking-normal text-navy sm:text-3xl;
+  }
+
+  .section-lead {
+    @apply mt-4 max-w-3xl text-sm leading-7 text-steel sm:text-base;
+  }
+
+  .info-card {
+    @apply rounded-lg border border-line bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-calm;
+  }
+}
