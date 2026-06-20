@@ -41,17 +41,17 @@ export function Contact() {
       <div className="section-shell">
         <SectionHeading
           label="Contact"
-          title="連絡先"
+          title="Research, engineering, and collaboration."
           lead="GitHub、メール、ポートフォリオURLは data/profile.ts から差し替えできます。XやLinkedInも後から追加できます。"
           tone="dark"
         />
-        <div className="mt-9 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid border-y border-white/15 md:grid-cols-2 lg:grid-cols-3">
           {contacts.map((contact) => {
             const Icon = contact.icon;
             const hasLink = contact.href.trim().length > 0;
             const content = (
               <>
-                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-white/10 text-white">
+                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white/10 text-white">
                   <Icon size={21} />
                 </div>
                 <div className="min-w-0">
@@ -69,14 +69,14 @@ export function Contact() {
               <a
                 key={contact.label}
                 href={contact.href}
-                className="flex items-center gap-4 rounded-lg border border-white/15 bg-white/[0.08] p-5 transition hover:bg-white/[0.14]"
+                className="flex items-center gap-4 border-b border-white/15 p-6 transition hover:bg-white/[0.08] lg:border-r"
               >
                 {content}
               </a>
             ) : (
               <div
                 key={contact.label}
-                className="flex items-center gap-4 rounded-lg border border-white/15 bg-white/[0.08] p-5"
+                className="flex items-center gap-4 border-b border-white/15 p-6 lg:border-r"
               >
                 {content}
               </div>

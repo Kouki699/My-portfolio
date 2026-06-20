@@ -14,11 +14,11 @@ export function SectionHeading({
   const isDark = tone === "dark";
 
   return (
-    <div>
+    <div className="max-w-5xl">
       <p className={isDark ? "section-label text-blue-200" : "section-label"}>
         {label}
       </p>
-      <h2 className={isDark ? "section-title text-white" : "section-title"}>
+      <h2 className={isDark ? "section-title text-white" : "section-title text-balance"}>
         {title}
       </h2>
       {lead ? (

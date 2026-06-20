@@ -10,14 +10,14 @@ const config: Config = {
     extend: {
       colors: {
         ink: "#0f172a",
-        navy: "#10233f",
-        steel: "#475569",
-        line: "#d9e2ec",
-        soft: "#f6f8fb",
-        accent: "#1d4ed8",
+        navy: "#0b1220",
+        steel: "#526173",
+        line: "#dfe5ec",
+        soft: "#f7f9fb",
+        accent: "#175cff",
       },
       boxShadow: {
-        calm: "0 18px 45px rgba(15, 23, 42, 0.08)",
+        calm: "0 24px 70px rgba(15, 23, 42, 0.07)",
       },
       fontFamily: {
         sans: [

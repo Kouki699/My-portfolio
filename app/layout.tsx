@@ -10,9 +10,9 @@ const notoSansJp = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "内倉 康喜 | Portfolio",
+  title: "内倉 康喜 | Research & Engineering",
   description:
-    "画像処理・AIを用いた身体動作解析に取り組む大学院生、内倉 康喜のポートフォリオサイトです。",
+    "画像処理・AIを用いた身体動作解析に取り組む大学院生、内倉 康喜の公式サイトです。",
 };
 
 export default function RootLayout({
