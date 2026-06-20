@@ -41,7 +41,7 @@ export function Contact() {
       <div className="section-shell">
         <SectionHeading
           label="Contact"
-          title="Research, engineering, and collaboration."
+          title={["Research, Engineering,", "and Collaboration."]}
           lead="GitHub、メール、ポートフォリオURLは data/profile.ts から差し替えできます。XやLinkedInも後から追加できます。"
           tone="dark"
         />

@@ -7,7 +7,7 @@ export function Achievements() {
       <div className="section-shell">
         <SectionHeading
           label="Outcomes"
-          title="研究と開発を、成果として伝える。"
+          title={["研究と開発を、", "成果として伝える。"]}
           lead="ハッカソンでの受賞や決勝進出など、チームで取り組んだ開発経験を実績として整理しています。"
         />
         <div className="mt-14 grid border-y border-line bg-white lg:grid-cols-3">

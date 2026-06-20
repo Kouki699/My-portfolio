@@ -7,7 +7,7 @@ export function About() {
       <div className="section-shell grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
         <SectionHeading
           label="Statement"
-          title="映像の中にある人の動きを、判断に使える情報へ変換する。"
+          title={["映像から人の動きを読み解き、", "判断に使える情報へ。"]}
           lead="画像処理・AIを軸に、動画から得られる情報を社会や現場で使える形に整理することに関心があります。"
         />
         <div className="border-t border-line">

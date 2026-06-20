@@ -8,7 +8,7 @@ export function CareerInterest() {
       <div className="section-shell grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
         <SectionHeading
           label="Interest"
-          title="技術で、現場の判断と業務改善を支える。"
+          title={["現場の判断と", "業務改善を支える技術。"]}
           lead="技術で現場の課題を整理し、使いやすい仕組みや分析に落とし込む仕事に関心があります。"
         />
         <div className="grid border-t border-line sm:grid-cols-2">

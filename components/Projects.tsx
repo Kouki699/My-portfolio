@@ -12,7 +12,7 @@ export function Projects() {
       <div className="section-shell">
         <SectionHeading
           label="Projects"
-          title="研究・開発の経験を、実装と発表につなげる。"
+          title={["研究・開発の経験を、", "実装と発表につなげる。"]}
           lead="研究だけでなく、アプリ開発や発表資料作成など、チームで形にする経験も掲載しています。"
         />
         <div className="mt-14 border-t border-navy">
