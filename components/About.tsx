@@ -7,8 +7,8 @@ export function About() {
       <div className="section-shell grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
         <SectionHeading
           label="Statement"
-          title={["映像から人の動きを読み解き、", "判断に使える情報へ。"]}
-          lead="画像処理・AIを軸に、動画から得られる情報を社会や現場で使える形に整理することに関心があります。"
+          title={["画像処理・AIを学び、", "身体動作を定量化する。"]}
+          lead="研究内容、開発経験、志望領域が短時間でも伝わるように、これまでの取り組みを整理しています。"
         />
         <div className="border-t border-line">
           {about.map((item, index) => (

@@ -8,7 +8,7 @@ export function Skills() {
       <div className="section-shell">
         <SectionHeading
           label="Skills"
-          title={["分析・実装・可視化。", "研究を支える技術スタック。"]}
+          title={["分析、実装、可視化を支える", "技術スタック。"]}
           lead="画像処理、機械学習、アプリ開発、資料作成まで、研究と開発の場面で使ってきたスキルです。"
         />
         <div className="mt-14 flex flex-wrap border-t border-line">

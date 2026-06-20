@@ -3,6 +3,8 @@ import { ArrowRight, Github, Mail } from "lucide-react";
 import { heroStats, highlights, profile } from "@/data/profile";
 
 export function Hero() {
+  const hasEmail = profile.contact.email.trim().length > 0;
+
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="section-shell grid min-h-[calc(100vh-5.25rem)] items-center gap-12 py-14 lg:grid-cols-[0.96fr_1.04fr] lg:py-0">
@@ -53,7 +55,7 @@ export function Hero() {
               GitHub
             </a>
             <a
-              href={`mailto:${profile.contact.email}`}
+              href={hasEmail ? `mailto:${profile.contact.email}` : "#contact"}
               className="inline-flex items-center gap-2 border border-line bg-white px-7 py-4 text-sm font-black text-navy transition hover:border-navy"
             >
               <Mail size={17} />

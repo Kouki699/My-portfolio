@@ -11,8 +11,8 @@ const contacts = [
   },
   {
     label: "Email",
-    value: profile.contact.email,
-    href: `mailto:${profile.contact.email}`,
+    value: profile.contact.email || "メールアドレスは後から追加",
+    href: profile.contact.email ? `mailto:${profile.contact.email}` : "",
     icon: Mail,
   },
   {
@@ -42,7 +42,7 @@ export function Contact() {
         <SectionHeading
           label="Contact"
           title={["Research, Engineering,", "and Collaboration."]}
-          lead="GitHub、メール、ポートフォリオURLは data/profile.ts から差し替えできます。XやLinkedInも後から追加できます。"
+          lead="GitHub、メール、ポートフォリオURLは data/profile.ts から編集できます。XやLinkedInも後から追加できます。"
           tone="dark"
         />
         <div className="mt-14 grid border-y border-white/15 md:grid-cols-2 lg:grid-cols-3">

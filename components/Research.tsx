@@ -7,8 +7,8 @@ export function Research() {
       <div className="section-shell">
         <SectionHeading
           label="Research"
-          title={["動画から身体動作を", "数値化する研究"]}
-          lead="専門外の人にも状況が伝わるように、動画から特徴量を抽出し、動きの状態や変化をわかりやすく評価することを目指しています。"
+          title={["動画から人の動きを捉え、", "状態や変化を数値で示す。"]}
+          lead="歩行解析とスポーツ動作解析を通して、映像から得られる情報を専門外の人にも伝わる形へ整理しています。"
         />
         <div className="mt-14 border-t border-navy">
           {research.map((item, index) => (

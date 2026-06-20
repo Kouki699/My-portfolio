@@ -1,6 +1,6 @@
 # 内倉 康喜 Portfolio
 
-私のこれまでの経歴をまとめた、Next.js / TypeScript / Tailwind CSS 製のポートフォリオサイトです。
+就活・インターン応募向けに、研究内容、開発経験、スキル、強み、志望職種をまとめたポートフォリオサイトです。
 
 ## 技術構成
 
@@ -33,9 +33,11 @@ npm run build
 - `profile.contact.github`
 - `profile.contact.email`
 - `profile.contact.portfolio`
+- `profile.contact.x`
+- `profile.contact.linkedIn`
 - `projects[].githubUrl`
-- 必要に応じて `profile.contact.x`
-- 必要に応じて `profile.contact.linkedIn`
+
+メールアドレス、X、LinkedIn は未入力でも表示が崩れないようにしています。
 
 ## Vercel デプロイ手順
 
@@ -56,6 +58,10 @@ git push -u origin main
 5. GitHub リポジトリをインポートします。
 6. Framework Preset が `Next.js` になっていることを確認します。
 7. `Deploy` を押します。
+
+現在の公開URL:
+
+- https://kouki-u-portfolio.vercel.app
 
 ## 注意
 
