@@ -6,9 +6,9 @@ export const profile = {
   summary:
     "歩行やスポーツ動作を動画から定量化し、人の動きを客観的に理解する研究に取り組んでいます。",
   contact: {
-    github: "https://github.com/your-github-id",
+    github: "https://github.com/Kouki699",
     email: "your.email@example.com",
-    portfolio: "https://your-portfolio.vercel.app",
+    portfolio: "https://kouki-u-portfolio.vercel.app",
     x: "",
     linkedIn: "",
   },
