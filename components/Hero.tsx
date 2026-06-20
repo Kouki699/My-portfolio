@@ -8,12 +8,10 @@ export function Hero() {
       <div className="section-shell grid min-h-[calc(100vh-5.25rem)] items-center gap-12 py-14 lg:grid-cols-[0.96fr_1.04fr] lg:py-0">
         <div className="relative z-10 py-10 lg:py-24">
           <p className="section-label">Research / Computer Vision / AI</p>
-          <h1 className="text-balance mt-10 max-w-5xl text-5xl font-black leading-[1.22] tracking-normal text-navy sm:text-6xl lg:text-[5.7rem]">
-            アルゴリズムで、
-            <br />
-            人の動きを
-            <br />
-            理解可能にする
+          <h1 className="mt-10 max-w-5xl text-[2.65rem] font-black leading-[1.22] tracking-normal text-navy sm:text-6xl lg:text-[4.8rem] xl:text-[5.35rem]">
+            <span className="block whitespace-nowrap">アルゴリズムで、</span>
+            <span className="block whitespace-nowrap">人の動きを</span>
+            <span className="block whitespace-nowrap">理解可能にする</span>
           </h1>
           <p className="mt-12 text-xl font-black text-navy sm:text-2xl">
             {profile.name}
@@ -77,11 +75,11 @@ export function Hero() {
                 className="h-full w-full object-cover grayscale invert"
               />
             </div>
-            <div className="absolute bottom-16 left-[23%] text-white">
+            <div className="absolute bottom-10 left-[23%] right-28 text-white">
               <p className="text-[11px] font-black uppercase tracking-[0.28em] text-white/60">
                 Vision
               </p>
-              <p className="mt-3 max-w-sm text-2xl font-black leading-snug">
+              <p className="mt-3 max-w-xs text-xl font-black leading-snug">
                 Motion data for better decision making.
               </p>
             </div>
@@ -98,17 +96,17 @@ export function Hero() {
 
       <div className="section-shell py-8 lg:hidden">
         <div className="grid gap-0 border-y border-line">
-            {highlights.map((item, index) => (
-              <div
-                key={item}
-                className="grid grid-cols-[3rem_1fr] border-b border-line py-4 last:border-b-0"
-              >
-                <span className="text-xs font-black text-accent">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="text-sm font-black text-navy">{item}</span>
-              </div>
-            ))}
+          {highlights.map((item, index) => (
+            <div
+              key={item}
+              className="grid grid-cols-[3rem_1fr] border-b border-line py-4 last:border-b-0"
+            >
+              <span className="text-xs font-black text-accent">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span className="text-sm font-black text-navy">{item}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
