@@ -15,12 +15,12 @@ export const profile = {
 };
 
 export const navigation = [
-  { label: "Statement", href: "#about" },
-  { label: "Research", href: "#research" },
-  { label: "Outcomes", href: "#achievements" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "研究内容", href: "#research" },
+  { label: "実績", href: "#achievements" },
+  { label: "プロジェクト", href: "#projects" },
+  { label: "技術", href: "#skills" },
+  { label: "関心領域", href: "#career" },
+  { label: "お問い合わせ", href: "#contact" },
 ];
 
 export const heroStats = [

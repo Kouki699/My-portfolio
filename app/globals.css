@@ -54,4 +54,51 @@ a {
   .text-balance {
     text-wrap: balance;
   }
+
+  .slash-mark {
+    width: 0.72rem;
+    height: 2rem;
+    transform: skewX(-26deg);
+    background: linear-gradient(180deg, #05070a 0%, #b8c0c9 100%);
+    display: inline-block;
+  }
+
+  .hero-slab {
+    position: relative;
+    min-height: 38rem;
+    overflow: hidden;
+    background:
+      linear-gradient(125deg, rgba(255, 255, 255, 0) 0 35%, rgba(255, 255, 255, 0.08) 35% 36%, rgba(255, 255, 255, 0) 36% 100%),
+      linear-gradient(135deg, #05070a 0%, #34383d 54%, #090b0e 100%);
+    clip-path: polygon(32% 0, 100% 0, 88% 100%, 0 100%);
+  }
+
+  .hero-slab::before,
+  .hero-slab::after {
+    content: "";
+    position: absolute;
+    inset: auto;
+    display: block;
+    background: rgba(255, 255, 255, 0.09);
+    transform: skewX(-18deg);
+  }
+
+  .hero-slab::before {
+    width: 28rem;
+    height: 7rem;
+    right: 9%;
+    top: 28%;
+  }
+
+  .hero-slab::after {
+    width: 20rem;
+    height: 12rem;
+    right: 22%;
+    bottom: 16%;
+    opacity: 0.56;
+  }
+
+  .section-bar {
+    @apply border-y border-navy bg-white;
+  }
 }
