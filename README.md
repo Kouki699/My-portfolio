@@ -1,6 +1,6 @@
 # 内倉 康喜 Portfolio
 
-就活・インターン応募時に提出できる、Next.js / TypeScript / Tailwind CSS 製のポートフォリオサイトです。
+私のこれまでの経歴をまとめた、Next.js / TypeScript / Tailwind CSS 製のポートフォリオサイトです。
 
 ## 技術構成
 
