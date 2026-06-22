@@ -1,68 +1,55 @@
-# 内倉 康喜 Portfolio
+# Kouki Uchikura Portfolio
 
-就活・インターン向けに、研究内容、開発経験、スキル、強み、志望職種をまとめたポートフォリオサイトです。
+宮崎大学大学院 工学研究科 情報系に所属する内倉 康喜のポートフォリオサイトです。
 
-## 技術構成
+画像処理・AIを用いた身体動作解析の研究内容、開発経験、スキル、強み、志望領域を、就職活動・インターン応募時に分かりやすく伝えることを目的として制作しています。
 
-- Next.js App Router
+## Site
+
+- Portfolio: https://kouki-u-portfolio.vercel.app
+- GitHub: https://github.com/Kouki699
+
+## Contents
+
+- About: 研究分野とこれまでの取り組み
+- Research: 高齢者歩行解析、レスリング動作解析
+- Achievements: GDGoC Japan Hackathonでの受賞実績
+- Projects: チーム開発で担当した内容
+- Skills: 研究・開発で使用している技術
+- Strengths / Career Vision: 強みと志望職種
+- Contact: GitHub、ポートフォリオURL、連絡先
+
+## Tech Stack
+
+- Next.js
 - TypeScript
 - Tailwind CSS
-- Vercel デプロイ対応
+- Vercel
 
-## ローカル起動
+## Project Structure
+
+```text
+app/
+components/
+data/profile.ts
+public/
+```
+
+掲載内容は `data/profile.ts` に集約し、プロフィール、研究内容、プロジェクト、スキル、連絡先を後から編集しやすい構成にしています。
+
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-ブラウザで `http://localhost:3000` を開きます。
-
-本番ビルド確認:
+Build:
 
 ```bash
 npm run build
 ```
 
-## 掲載内容の編集
+## Deployment
 
-プロフィール、研究、プロジェクト、スキル、連絡先は `data/profile.ts` にまとめています。
-
-公開前に、特に以下を差し替えてください。
-
-- `profile.contact.github`
-- `profile.contact.email`
-- `profile.contact.portfolio`
-- `profile.contact.x`
-- `profile.contact.linkedIn`
-- `projects[].githubUrl`
-
-メールアドレス、X、LinkedIn は未入力でも表示が崩れないようにしています。
-
-## Vercel デプロイ手順
-
-1. GitHub に新しいリポジトリを作成します。
-2. このフォルダで以下を実行します。
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio site"
-git branch -M main
-git remote add origin <your-github-repository-url>
-git push -u origin main
-```
-
-3. [Vercel](https://vercel.com/) にログインします。
-4. `Add New...` → `Project` を選択します。
-5. GitHub リポジトリをインポートします。
-6. Framework Preset が `Next.js` になっていることを確認します。
-7. `Deploy` を押します。
-
-現在の公開URL:
-
-- https://kouki-u-portfolio.vercel.app
-
-## 注意
-
-この作業環境では `node` / `npm` / `git` が通常の PATH から見えない場合があります。ローカル PC で実行する場合は Node.js と Git をインストールし、ターミナルから `node --version`、`npm --version`、`git --version` が確認できる状態にしてください。
+VercelとGitHubリポジトリを連携し、`main` ブランチへのpushをもとに自動デプロイしています。
