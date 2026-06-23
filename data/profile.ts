@@ -8,7 +8,7 @@ export const profile = {
     "画像処理・AIを用いた身体動作解析に取り組む大学院生です。学部時代は高齢者の歩行動画解析に取り組み、現在はスポーツ動作解析をテーマに、動画から人の動きを定量化する研究を進めています。将来はIT技術を活用して、現場の課題解決や業務改善に貢献できるエンジニアを目指しています。",
   contact: {
     github: "https://github.com/Kouki699",
-    email: "",
+    email: "kouki.uchikura28@gmail.com",
     portfolio: "https://kouki-u-portfolio.vercel.app",
     x: "",
     linkedIn: "",
