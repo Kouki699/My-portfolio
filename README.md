@@ -9,6 +9,13 @@
 - Portfolio: https://kouki-u-portfolio.vercel.app
 - GitHub: https://github.com/Kouki699
 
+## Highlights
+
+- 画像処理・AIを用いた身体動作解析の研究内容を掲載
+- 高齢者歩行解析とレスリング動作解析を、専門外にも伝わる文章で整理
+- GDGoC Japan Hackathonでの受賞経験とチーム開発での担当内容を掲載
+- 連絡先、GitHub、ポートフォリオURLをまとめた就活向け構成
+
 ## Contents
 
 - About: 研究分野とこれまでの取り組み

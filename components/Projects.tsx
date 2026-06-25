@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, Trophy } from "lucide-react";
 import { projects } from "@/data/profile";
 import { SectionHeading } from "@/components/SectionHeading";
 
@@ -37,6 +37,27 @@ export function Projects() {
                   <p className="mt-5 border-l-2 border-accent pl-4 text-sm font-bold leading-7 text-ink">
                     担当：{project.role}
                   </p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {project.techStack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="border border-line px-3 py-2 text-xs font-black text-navy"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-6 grid gap-2">
+                    {project.outcomes.map((outcome) => (
+                      <div
+                        key={outcome}
+                        className="flex items-center gap-3 text-sm font-bold text-ink"
+                      >
+                        <Trophy className="shrink-0 text-accent" size={17} />
+                        {outcome}
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <div className="flex items-start lg:justify-end">
                   {available ? (

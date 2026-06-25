@@ -69,6 +69,33 @@ export const research = [
   },
 ];
 
+export const researchProcess = [
+  {
+    label: "01",
+    title: "動画データの整理",
+    description:
+      "歩行動画やスポーツ動画を対象に、解析しやすい形へ整理し、動きの変化を確認します。",
+  },
+  {
+    label: "02",
+    title: "特徴量の抽出",
+    description:
+      "速度、歩幅、姿勢角、周期、位置関係など、身体動作を説明する特徴を抽出します。",
+  },
+  {
+    label: "03",
+    title: "定量化と可視化",
+    description:
+      "抽出した特徴を数値やグラフで整理し、動作の状態や変化を比較しやすくします。",
+  },
+  {
+    label: "04",
+    title: "現場で使える解釈",
+    description:
+      "専門外の人にも伝わる表現に落とし込み、評価や指導支援につながる形を目指します。",
+  },
+];
+
 export const achievements = [
   {
     value: "九州地区 最優秀賞",
@@ -91,6 +118,8 @@ export const projects = [
     description:
       "3人チームでアプリ開発に取り組み、九州地区で最優秀賞を受賞し、東京決勝大会では企業賞を受賞しました。",
     role: "アイデア整理、UI検討、役割分担、進行管理、発表資料作成などを担当し、チーム全体が限られた期間で成果を出せるように支援しました。",
+    techStack: ["Flutter", "GitHub", "Canva"],
+    outcomes: ["九州地区 最優秀賞", "東京決勝大会進出", "企業賞受賞"],
     githubUrl: "https://github.com/akakirishima/mo-kun",
   },
 ];

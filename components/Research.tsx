@@ -1,4 +1,4 @@
-import { research } from "@/data/profile";
+import { research, researchProcess } from "@/data/profile";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export function Research() {
@@ -44,6 +44,32 @@ export function Research() {
               </ul>
             </article>
           ))}
+        </div>
+        <div className="mt-16 border-t border-navy">
+          <div className="grid gap-8 border-b border-line py-10 lg:grid-cols-[18rem_1fr]">
+            <div>
+              <p className="section-label">Process</p>
+              <h3 className="mt-4 text-3xl font-black leading-tight text-navy">
+                研究の進め方
+              </h3>
+            </div>
+            <div className="grid border-t border-line sm:grid-cols-2 lg:border-t-0">
+              {researchProcess.map((step) => (
+                <div
+                  key={step.label}
+                  className="border-b border-line py-6 sm:odd:border-r sm:odd:pr-6 sm:even:pl-6"
+                >
+                  <p className="text-xs font-black text-accent">{step.label}</p>
+                  <h4 className="mt-3 text-lg font-black text-navy">
+                    {step.title}
+                  </h4>
+                  <p className="mt-3 text-sm leading-7 text-steel">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
